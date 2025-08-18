@@ -1,0 +1,69 @@
+# === Node.js & Backend (server) ===
+server/node_modules/
+server/package-lock.json
+server/.env
+server/.env.local
+server/.env.development.local
+server/.env.test.local
+server/.env.production.local
+server/logs/
+server/*.log
+server/pids/
+server/*.pid
+server/SapGoogleSheetForm.json
+
+# === React / Next.js Frontend (client) ===
+client/node_modules/
+client/package-lock.json
+client/.next/
+client/out/
+client/build/
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+client/.cache/
+client/.vercel/
+client/.next-static/
+client/.next-cache/
+
+# === Common files ===
+*.log
+*.pid
+*.seed
+*.tgz
+*.local
+*.tmp
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+
+# === Editor directories and files ===
+.vscode/
+.idea/
+*.iml
+
+# === TypeScript (if used) ===
+*.tsbuildinfo
+
+# === Test coverage & Cypress ===
+coverage/
+client/coverage/
+server/coverage/
+cypress/screenshots/
+cypress/videos/
+
+# === Misc ===
+logs/
+*.swp
+*.swo
+*.bak
+*.orig
+
+# === Docker (optional) ===
+docker-compose.override.yml
+docker-compose.dev.yml
+.dockerignore
+c
