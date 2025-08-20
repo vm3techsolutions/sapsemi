@@ -52,7 +52,7 @@ export default function QuoteFormSection() {
   };
 
   return (
-    <div className="Section bg-[#D9D9D9]/12">
+    <div className="Section bg-[#D9D9D9]/12" id="Enquiry">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}

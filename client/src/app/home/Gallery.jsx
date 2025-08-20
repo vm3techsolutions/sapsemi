@@ -8,7 +8,7 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <div className="Section bg-white ">
+    <div className="Section bg-white " id="Gallery">
       {/* Title */}
       <h2 className="Heading text-center ">
         Gallery

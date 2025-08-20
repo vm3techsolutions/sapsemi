@@ -48,7 +48,7 @@ export default function TestimonialSlider() {
   }, [index]);
 
   return (
-    <div className="bg-[#D9D9D9]/12 Section">
+    <div className="bg-[#D9D9D9]/12 Section" id="Testimonials">
       <h2 className="text-center Heading">Testimonials</h2>
       <div className="relative max-w-6xl mx-auto overflow-hidden">
         {/* Slider */}

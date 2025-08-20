@@ -8,7 +8,7 @@ const downloads = [
 
 export default function TechnicalDownloads() {
   return (
-    <div className="Section bg-white">
+    <div className="Section bg-white" id="Downloads">
       {/* Title */}
       <h2 className="Heading text-center ">
         Technical Downloads & Resources

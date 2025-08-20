@@ -1,7 +1,7 @@
 // components/QualityAssurance.jsx
 export default function QualityAssurance() {
   return (
-    <div className="Section bg-[#D9D9D9]/12">
+    <div className="Section bg-[#D9D9D9]/12" id="Quality">
       {/* Title */}
       <h2 className="Heading text-center">
         Quality &amp; R&amp;D Assurance

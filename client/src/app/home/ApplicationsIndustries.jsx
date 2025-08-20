@@ -31,7 +31,7 @@ export default function ApplicationsIndustries() {
   };
 
   return (
-    <div className="Section bg-white">
+    <div className="Section bg-white" id="Applications">
       {/* Title */}
       <h2 className="Heading text-center">
         Applications & Industries

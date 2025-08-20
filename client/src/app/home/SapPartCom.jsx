@@ -1,7 +1,7 @@
 // components/SpecsSnapshot.jsx
 export default function SpecsSnapshot() {
   return (
-    <div className="Section bg-[#D9D9D9]/12">
+    <div className="Section bg-[#D9D9D9]/12" id="Overview">
       {/* Main Heading */}
       <p className="Heading text-center">
         SAP Parts manufactures precision bushings—specifically alloy steel and

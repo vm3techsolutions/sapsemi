@@ -25,7 +25,7 @@ const features = [
 
 export default function FeaturesBenefits() {
   return (
-    <section className="Section bg-white">
+    <section className="Section bg-white" id="Features">
       <h2 className="Heading text-center">
         Features & Benefits
       </h2>

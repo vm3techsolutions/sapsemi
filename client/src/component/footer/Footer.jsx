@@ -7,12 +7,25 @@ import { useTranslation } from "react-i18next";
 export default function Footer() {
   const { t } = useTranslation();
 
+  const navLinks = [
+    { name: "Overview", href: "#Overview" },
+    { name: "Features", href: "#Features" },
+    { name: "Applications", href: "#Applications" },
+    { name: "Quality Assurance", href: "#Quality" },
+    { name: "Downloads", href: "#Downloads" },
+    { name: "Gallery", href: "#Gallery" },
+    { name: "Related Products", href: "#Products" },
+    { name: "Testimonials", href: "#Testimonials" },
+    { name: "Enquiry", href: "#Enquiry" },
+  ];
+
   return (
     <footer className="bg-[#363636] text-white mt-5">
       {/* Main Footer Content */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-0 px-6 md:px-10 pt-6 pb-3">
-        {/* Logo and Description */}
-        <div className="md:pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-10 pt-6 pb-3">
+        
+        {/* Logo */}
+        <div>
           <Image
             src="/assets/home/FooterLogo.png"
             alt="SAP Parts"
@@ -20,64 +33,40 @@ export default function Footer() {
             height={50}
             className="mb-4"
           />
-          <p className="text-md text-gray-300">{t("Footer Description")}</p>
+        </div>
+
+        {/* Description */}
+        <div className="-ml-20">
+          <p className="text-md text-gray-300 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc feugiat, mauris non bibendum gravida, sapien purus 
+            facilisis neque, et porttitor magna arcu ac justo.
+          </p>
         </div>
 
         {/* Quick Links */}
-        <div className="md:ml-10">
-          <h3 className="text-[#FACC48] font-semibold text-lg mb-3">
+        <div className="ml-10">
+          <h3 className="text-[#FACC48] font-semibold text-lg mb-3 ">
             {t("Quick Links")}
           </h3>
-          <ul className="space-y-4 text-md">
-            <li><Link href="/strategy">{t("Strategy")}</Link></li>
-            <li><Link href="/technology">{t("Technology")}</Link></li>
-            <li><Link href="/resources">{t("Resources")}</Link></li>
-            <li><Link href="/sustainability">{t("Sustainability")}</Link></li>
-            <li><Link href="/about">{t("About Us")}</Link></li>
-            <li><Link href="/career">{t("Career")}</Link></li>
-            <li><Link href="/contact">{t("Contact Us")}</Link></li>
+          <ul className="space-y-3 text-md">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Industries */}
-        <div className="md:ml-5">
-          <h3 className="text-[#FACC48] font-semibold text-lg mb-3">
-            {t("Industries")}
-          </h3>
-          <ul className="space-y-4 text-md">
-            <li><Link href="/industries/agriculture">{t("Agriculture")}</Link></li>
-            <li><Link href="/industries/automotive">{t("Automotive")}</Link></li>
-            <li><Link href="/industries/construction">{t("Construction")}</Link></li>
-            <li><Link href="/industries/defence">{t("Defence")}</Link></li>
-            <li><Link href="/industries/industrial">{t("Industrial")}</Link></li>
-            <li><Link href="/industries/mining">{t("Mining")}</Link></li>
-            <li><Link href="/industries/high-tech">{t("High-Tech")}</Link></li>
-          </ul>
-        </div>
-
-        {/* Products */}
-       <div>
-  <h3 className="text-[#FACC48] font-semibold text-lg mb-3">
-    {t("Products")}
-  </h3>
-  <ul className="space-y-4 text-md ">
-    <li><Link href="/products/mechanical-face-seals">Mechanical Face Seals</Link></li>
-    <li><Link href="/products/bushings">Bushings</Link></li>
-    <li><Link href="/products/sintered-products">Sintered Products</Link></li>
-    <li><Link href="/products/pump-valves-components">Pump & Valves Components</Link></li>
-    <li><Link href="/products/sap-hub-bearings">SAP Hub Bearings</Link></li>
-    <li><Link href="/products/precision-components">Precision Components</Link></li>
-  </ul>
-</div>
-
-
-        {/* Contact Info */}
+        {/* Get in Touch */}
         <div>
           <h3 className="text-[#FACC48] font-semibold text-lg mb-3">{t("Get in Touch")}</h3>
           <p className="text-md text-gray-300 mb-2">{t("Address")}:</p>
-          <p className="text-md text-gray-300 my-5">{t("Phone")}: +91 12345 12345</p>
-          <p className="text-md text-gray-300 my-5">{t("Email")}: sales@sapparts.com</p>
-          <div className="flex items-center gap-3 text-[#363636] text-2xl">
+          <p className="text-md text-gray-300 mb-3">{t("Phone")}: +91 12345 12345</p>
+          <p className="text-md text-gray-300 mb-3">{t("Email")}: sales@sapparts.com</p>
+          
+          {/* Social Icons */}
+          <div className="flex items-center gap-3 text-[#363636] text-2xl mt-4">
             <Link href="#"><FaFacebookF className="rounded-full bg-[#FACC48] p-1" /></Link>
             <Link href="#"><FaInstagram className="rounded-full bg-[#FACC48] p-1" /></Link>
             <Link href="#"><FaYoutube className="rounded-full bg-[#FACC48] p-1" /></Link>
