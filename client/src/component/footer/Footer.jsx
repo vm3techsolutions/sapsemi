@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         {/* Description */}
-        <div className="-ml-20">
+        <div className="sm:-ml-20">
           <p className="text-md text-gray-300 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nunc feugiat, mauris non bibendum gravida, sapien purus 
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="ml-10">
+        <div className="sm:ml-10">
           <h3 className="text-[#FACC48] font-semibold text-lg mb-3 ">
             {t("Quick Links")}
           </h3>
