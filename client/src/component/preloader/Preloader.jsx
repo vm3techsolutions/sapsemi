@@ -33,7 +33,7 @@ export default function Preloader({ children }) {
 
         {/* Mobile Image */}
         <Image
-          src="/assets/home/MainSlide.png" 
+          src="/assets/home/MobileViewLogo.jpg" 
           alt="Loading..."
           width={500}
           height={800}
